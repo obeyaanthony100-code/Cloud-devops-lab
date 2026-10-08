@@ -6,3 +6,5 @@ echo "Home: $HOME"
 echo "Current directory: $(pwd)"
 echo "Date: $(date)"
 echo "=============================='
+echo "Git version:"
+git --version
