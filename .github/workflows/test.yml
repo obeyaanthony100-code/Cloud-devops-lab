@@ -1,0 +1,21 @@
+name: Test Bash Script
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get repository
+        uses: actions/checkout@v4
+
+      - name: Check script exists
+        run: test -f system-info.sh
+
+      - name: Check script syntax
+        run: bash -n system-info.sh
+
+      - name: Run script
+        run: bash system-info.sh
+        

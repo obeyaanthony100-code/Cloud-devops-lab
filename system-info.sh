@@ -1,8 +1,10 @@
-#!/bin/bash
+#!bin/bash
 
-echo "=====SYSTEM INFORMATION ====="
+echo "===== SYSTEM INFORMATION ====="
 echo "User: $(whoami)"
 echo "Home: $HOME"
 echo "Current directory: $(pwd)"
 echo "Date: $(date)"
-echo "=============================='
+echo "=============================="
+echo "Git version:"
+git --version
